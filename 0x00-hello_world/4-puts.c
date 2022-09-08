@@ -5,7 +5,8 @@
  * Return: 0 if successful
  */
 
-int main(void) {
+int main(void) 
+{
 
 	puts("\"Programming is like building a multilingual puzzle");
 
@@ -13,6 +14,6 @@ int main(void) {
 
 
 
-return 0;
+return (0);
 }
 
