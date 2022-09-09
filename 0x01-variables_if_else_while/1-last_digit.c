@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  *main ->  randomly generate numbers to the variable n 
  *and print the last digit of the number stored in the variable x
