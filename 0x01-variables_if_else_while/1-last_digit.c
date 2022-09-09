@@ -4,29 +4,29 @@
 /*betty style docc for function main goes there */
 /**
 *main : Entry point
+* x holds the last digit of a number
+* n randomly generated numbers
 *Return: Success (0)
-*generating n random numbers
-*y to hold the last digit of a number
 */
 int main(void)
 {
 	int n;
-	int y;
+	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	y = n % 10;
-	printf("Last digit of %d is %d ", n, y);
-	if (y > 5)
+	x = n % 10;
+	printf("Last digit of %d is %d ", n, x);
+	if (x > 5)
 	{
 		printf("and is greater than 5");
 	}
-	if (y == 0)
+	if (x == 0)
 	{
 		printf("and is 0");
 	}
-	if (y < 6 && y != 0)
+	if (x < 6 && x != 0)
 	{
 		printf("and is less than 6 and not 0");
 	}
