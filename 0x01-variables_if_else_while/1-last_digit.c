@@ -3,6 +3,8 @@
 /* more headers goes there */
 /*betty style docc for function main goes there */
 /**
+*main : Entry point
+*Return: Success (0)
 *generating n random numbers
 *y to hold the last digit of a number
 */
