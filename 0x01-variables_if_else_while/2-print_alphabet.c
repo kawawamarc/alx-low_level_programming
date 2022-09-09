@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  *main -> assign a random number to the variable n each time it is executed
  *print alphabets in lowercase
@@ -14,6 +13,5 @@ int main(void)
 		putchar(ch);
 	}
 	putchar(10); 
-
 	return (0);
 }
