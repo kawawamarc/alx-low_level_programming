@@ -1,17 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/*betty style docc for function main goes there */
 /**
-*main : Entry point
-*
-* x holds the last digit of a number
-* n randomly generated numbers
-*
-*Return: Success (0)
-*/
+ *main ->  randomly generate numbers to the variable n 
+ *and print the last digit of the number stored in the variable x
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
