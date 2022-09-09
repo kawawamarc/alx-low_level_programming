@@ -2,11 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
+
 /*betty style docc for function main goes there */
 /**
 *main : Entry point
+*
 * x holds the last digit of a number
 * n randomly generated numbers
+*
 *Return: Success (0)
 */
 int main(void)
