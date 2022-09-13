@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include "main.h"
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -10,9 +10,11 @@
 int main(void)
 {
 char ch[]="_putchar";
+char c;
 for(int i=0;i<sizeof(ch);i++)
 {
-	_putchar(ch[i]);
+	c = ch[i];
+	_putchar(c);
 }
 _putchar("\n");
 return (0);
