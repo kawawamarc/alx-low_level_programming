@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-char ch[]="_putchar";
+char ch[8]="_putchar";
 char c;
 int i =0;
-while(i<sizeof(ch))
+while(i<8)
 {
 	c = ch[i];
 	_putchar(c);
 	i++;
 }
-_putchar("\n");
+_putchar('\n');
 return (0);
 }
 int _putchar(char c)
