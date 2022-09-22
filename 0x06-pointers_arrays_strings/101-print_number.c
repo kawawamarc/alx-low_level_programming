@@ -1,11 +1,12 @@
+
+
 #include "main.h"
 
 /**
  * print_number - A function that prints an integer.
  * @n: input integer.
- * Return: A void function.
+ * Return: Void function (no return)
  */
-
 void print_number(int n)
 {
 	unsigned int m, d, count;
