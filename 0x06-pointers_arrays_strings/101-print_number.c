@@ -5,31 +5,32 @@
  * @n: input integer.
  * Return: A void function.
  */
+
 void print_number(int n)
 {
-	unsigned int i, j, count;
+	unsigned int m, d, count;
 
 	if (n < 0)
 	{
 		_putchar(45);
-		i = n * -1;
+		m = n * -1;
 	}
 	else
 	{
-		i = n;
+		m = n;
 	}
 
-	j = i;
+	d = m;
 	count = 1;
 
-	while (j > 9)
+	while (d > 9)
 	{
-		j /= 10;
+		d /= 10;
 		count *= 10;
 	}
 
 	for (; count >= 1; count /= 10)
 	{
-		_putchar(((i / count) % 10) + 48);
+		_putchar(((m / count) % 10) + 48);
 	}
 }
