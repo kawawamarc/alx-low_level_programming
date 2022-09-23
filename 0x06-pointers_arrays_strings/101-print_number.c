@@ -9,40 +9,18 @@
 
 void print_number(int n)
 {
-	int i, l, x, h, ans, consN, superN;
-
+	unsigned int num;
+/*check if number is negative*/
+	num = n;
 	if (n < 0)
-		_putchar('-');
-
-	consN = n, ans = n, superN = n;
-
-	if (n < 0)
-		for (l = 0; superN < 0; ++l)
-			superN /= 10;
-	else
-		for (l = 0; superN > 0; ++l)
-			superN /= 10;
-
-	h = l - 1;
-
-	if (n == 0)
 	{
-		_putchar('0');
+		_putchar(45);
+		num = -n;
 	}
-	else
+/* print number by recursion*/
+	if (num / 10)
 	{
-		for (i = 0; i < l; i++)
-		{
-			x = h;
-			while (x)
-			{
-				ans = ans / 10;
-				x--;
-			}
-			ans =  ans % 10;
-			_putchar(abs(ans)  + '0');
-			ans = consN;
-			h--;
-		}
+		print_number(num / 10);
 	}
+	_putchar((num % 10) + '0');
 }
