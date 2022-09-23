@@ -9,18 +9,18 @@
 
 void print_number(int n)
 {
-	unsigned int num;
-/*check if number is negative*/
-	num = n;
+	unsigned int i;
+
 	if (n < 0)
 	{
-		_putchar(45);
-		num = -n;
+		_putchar('-');
+		n *= -1;
 	}
-/* print number by recursion*/
-	if (num / 10)
-	{
-		print_number(num / 10);
-	}
-	_putchar((num % 10) + '0');
+
+	i = n;
+
+	if (i / 10)
+		print_number(i / 10);
+
+	_putchar(i % 10 + '0');
 }
