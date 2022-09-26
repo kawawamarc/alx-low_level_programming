@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _memset - a function that fills n bytes of  memory addressed by pointer with a constant byte b.
  * @s: pointer variable to a memory location.
