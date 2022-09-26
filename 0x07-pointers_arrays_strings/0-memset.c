@@ -4,14 +4,19 @@
  * @s: pointer variable to a memory location.
  * @b: constant byte.
  * @n: n numbr of bytes to be filled.
- * Return: Returns a pointer to s.
+ * Return: returns a pointer to s.
  */
+
 char *_memset(char *s, char b, unsigned int n)
+
 {
 	unsigned int i;
 
+	/*Using for loop as iterator*/
 	for (i = 0; i < n; i++)
+	{
 		*(s + i) =  b;
+	}
 
 	return (s);
 }
