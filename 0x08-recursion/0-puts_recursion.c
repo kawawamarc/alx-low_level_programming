@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* _puts_recursion -> a function that prints a string recursively followed by newline
-* @s: string argument
+* _puts_recursion -> this is a function to print string recursively
+* @s: string paramenter
 */
 void _puts_recursion(char *s)
 {
